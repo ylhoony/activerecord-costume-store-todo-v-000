@@ -12,7 +12,7 @@ class CreateCostumes < ActiveRecord::Migration
   def change
     create_table :costumes do |t|
       t.string :name
-      t.rel :price
+      t.real :price
       t.string :size
       t.string :image_url
     end
